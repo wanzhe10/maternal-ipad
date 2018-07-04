@@ -1,0 +1,19 @@
+maternal-ipad 孕产妇-ipad端 目录结构
+/maternal-ipad
+    /js                         公共js
+    /css                        公共css
+    /images                     公共图片
+    /plugins                    插件库
+    /index                      首页
+        /index.html
+        /index.js
+        /index.less
+        *.png                   只与本页面相关的图片
+        *.jpg                   只与本页面相关的图片
+    /login                      登录
+        /login.html
+        /login.js
+        /login.less
+        *.png                   只与本页面相关的图片
+        *.jpg                   只与本页面相关的图片
+--------------------------------
