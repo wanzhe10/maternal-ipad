@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- 网站标题 google：66个字符也就是33个文字以内 百度：60个字符也就是30个文字以内 -->
+    <title>孕产妇档案管理</title>
+    <!-- 用户是否可以通过他的手势来缩放整个应用程序 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+    />
+    <!-- 作者 -->
+    <meta name="author" content="">
+    <!-- 描述 google：240个字符即120个文字以内 百度：220个字符即110个文字以内 -->
+    <meta name="description" content="">
+    <!-- 关键字 不超过100个字符50个文字以内 -->
+    <meta name="Keywords" content="">
+    <meta name="full-screen" content="yes" />
+    <!-- 将不识别手机号 -->
+    <meta name="format-detection" content="telephone=no" />
+    <!-- 将不识别邮箱 -->
+    <meta name="format-detection" content="email=no" />
+    <!-- 禁止跳转至地图 -->
+    <meta name="format-detection" content="address=no" />
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <script type="text/javascript">
+        !(function (doc, win) {
+            var docEle = doc.documentElement, //获取html元素
+                event = "onorientationchange" in window ? "orientationchange" : "resize",
+                fn = function () {
+                    var width = docEle.clientWidth;
+                    width && (docEle.style.fontSize = (width / 51.2) + "px");
+                }
+            win.addEventListener(event, fn, false);
+            win.addEventListener("DOMContentLoaded", fn, false);
+            win.addEventListener("resize", fn, false);
+        })(document, window);
+    </script>
+    <link rel="stylesheet" href="/maternal-ipad/plugins/layui/css/layui.css">
+    <link rel="stylesheet/less" type="text/css" href="/maternal-ipad/management/management.less" />
+    <script src="/maternal-ipad/js/jquery.js" charset="utf-8"></script>
+    <script src="/maternal-ipad/plugins/layui/layui.all.js" charset="utf-8"></script>
+    <script src="/maternal-ipad/js/less.min.js"></script>
+    <script src="/maternal-ipad/js/utils.js" charset="utf-8"></script>
+    <script src="/maternal-ipad/js/root.js" charset="utf-8"></script>
+    <script src="/maternal-ipad/management/management.js" charset="utf-8"></script>
+</head>
+
+<body>
+<span class="management">档案管理</span>
+ <div class="box">
+    <header>
+            <div class="item-ifo">
+                    <input type="text" placeholder="请输入姓名" class="nameInput"> 
+            <i class="my"></i>
+            </div>
+            <div class="item-ifo">
+                <input type="text" placeholder="请输入孕妇档案号" class="numInput">
+            <i class="lookpng"></i>
+            </div>
+
+<a href="javascript:;"><img src="/maternal-ipad/management/ma.png" alt="扫码"></a>
+<input type="button" value="查询/刷新" class="inquire">
+    </header>
+    <main>
+<table class="layui-table " lay-even>
+    <colgroup>
+        <col width="150">
+        <col width="200">
+        <col>
+    </colgroup>
+    <thead>
+        <tr>
+            <th>序号</th>
+            <th>姓名</th>
+            <th>身份证</th>
+            <th>年龄</th>
+            <th>孕周</th>
+            <th>孕产期</th>
+            <th>血型</th>
+            <th>评分等级</th>
+            <th>高危因素</th>
+            <th>操作</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>贤心</td>
+            <td>2016-11-29</td>
+            <td>人生就像是一场修行</td>
+        </tr>
+        <tr>
+            <td>许闲心</td>
+            <td>2016-11-28</td>
+            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+        </tr>
+    </tbody>
+</table>
+    </main>
+    <footer></footer>
+ </div>
+</body>
+
+</html>

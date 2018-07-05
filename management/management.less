@@ -1,0 +1,118 @@
+@import "../css/reset.css";
+@import "../css/root.less";
+
+body{
+    background-color: #ededed;
+    .management{
+        position: absolute;
+        .top(57);
+        .left(90);
+        .font-size(48);
+        color:@666;
+         &:before {
+                    content: ' ';
+                    position: absolute;
+                    .top(13);
+                    .left(-18);
+                    // transform: translate(-50%,0);
+                    .width(8);
+                    .height(48);
+                    background: #68b7e7;
+                 }
+    }
+}
+.box{
+    .margin(154,40,140,40);
+    background-color: #fff;
+    .width(1970);
+    .height(1208);
+    .box-shadow();
+    header{
+         .padding-top(50);
+        width: 100%;
+         .padding-bottom(50);
+        div{
+            display: inline-block;
+            position: relative;
+        }
+        div:nth-child(1){
+           
+             .margin-left(60);
+            i{
+                position: absolute;
+                .top(24);
+                .left(30);
+                background: url('/maternal-ipad/management/my.png') no-repeat 0 0;
+                .width(40);
+                .height(60);
+                  &:before {
+                    content: ' ';
+                    position: absolute;
+                    .top(0);
+                    .right(-36);
+                    // transform: translate(-50%,0);
+                    .width(2);
+                    .height(45);
+                    background: #ccc;
+                 }
+            }
+        }
+          div:nth-child(2){
+               .margin-left(75);
+            i{
+                 position: absolute;
+                .top(24);
+                .left(30);
+               background: url('/maternal-ipad/management/lookpng.png') no-repeat 0 0;
+                .width(40);
+                .height(60);
+                  &:before {
+                    content: ' ';
+                    position: absolute;
+                    .top(0);
+                    .right(-36);
+                    // transform: translate(-45%,0);
+                    .width(2);
+                    .height(45);
+                    background: #ccc;
+                 }
+            }
+        }
+        .nameInput{
+            .width(570);
+            .height(98);
+        //   .border-width(1);
+            border: 0.0305rem /* 1/16 */ solid #ccc;
+            .font-size(36);
+            .padding-left(153);
+           
+        }
+         .numInput{
+            .width(638);
+            .height(98);
+            //  .border-width(1);
+            border: 0.0305rem /* 1/16 */ solid #ccc;
+            .font-size(36);
+             .padding-left(153);
+        }
+        img{
+             .width(84);
+             .height(84);
+               .margin-left(108);
+                
+        }
+        .inquire{
+            .width(252);
+            .height(78);
+            background-color: #68b7e7;
+            color:#fff;
+            .font-size(32);
+            .margin-left(98);
+        }
+        
+    }
+    main{
+        .padding(0,20,0,20);
+    }
+ 
+}
