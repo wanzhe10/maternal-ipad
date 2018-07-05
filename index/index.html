@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <!-- 网站标题 google：66个字符也就是33个文字以内 百度：60个字符也就是30个文字以内 -->
     <title>孕产妇首页</title>
     <!-- 用户是否可以通过他的手势来缩放整个应用程序 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"
+    />
     <!-- 作者 -->
     <meta name="author" content="">
     <!-- 描述 google：240个字符即120个文字以内 百度：220个字符即110个文字以内 -->
@@ -32,16 +34,16 @@
     <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
     <meta name="HandheldFriendly" content="true">
     <script type="text/javascript">
-        !(function(doc, win) {
+        !(function (doc, win) {
             var docEle = doc.documentElement, //获取html元素
                 event = "onorientationchange" in window ? "orientationchange" : "resize",
-                fn = function() {
+                fn = function () {
                     var width = docEle.clientWidth;
                     width && (docEle.style.fontSize = (width / 51.2) + "px");
                 }
-                win.addEventListener(event, fn, false);
-                win.addEventListener("DOMContentLoaded", fn, false);
-                win.addEventListener("resize", fn, false);
+            win.addEventListener(event, fn, false);
+            win.addEventListener("DOMContentLoaded", fn, false);
+            win.addEventListener("resize", fn, false);
         })(document, window);
     </script>
     <link rel="stylesheet/less" type="text/css" href="/maternal-ipad/index/index.less" />
@@ -51,7 +53,49 @@
     <script src="/maternal-ipad/js/root.js" charset="utf-8"></script>
     <script src="/maternal-ipad/index/index.js" charset="utf-8"></script>
 </head>
+
 <body>
-    <p>首页window</p>
+    <header class="clearfix">
+        <img src="/maternal-ipad/index/homePage.png" alt="医院商标">
+        <div>
+            <p>围产期建档评估管理系统</p>
+            <p>主治医生&nbsp;:
+                <span>&nbsp;某某某医生</span>
+            </p>
+        </div>
+        <a href="javascript:;" class="Settings">
+            <img src="/maternal-ipad/index/Settings.png" alt="设置">
+        </a>
+
+    </header>
+    <footer>
+        <a href="javascript:;">
+            <div class="folder flex-item">
+                <div>
+                    <img src="/maternal-ipad/index/folder.png" alt="档案管理">
+                    <span>档案管理</span>
+                </div>
+            </div>
+        </a>
+        <a href="javascript:;">
+            <div class="bar flex-item">
+                <div>
+                    <img src="/maternal-ipad/index/bar.png" alt="条形扫描">
+                    <span>条形扫描</span>
+                </div>
+
+            </div>
+        </a>
+        <a href="javascript:;">
+            <div class="statistics flex-item">
+                <div>
+                    <img src="/maternal-ipad/index/statistics.png" alt="数据统计">
+                    <span>数据统计</span>
+                </div>
+
+            </div>
+        </a>
+    </footer>
 </body>
+
 </html>
