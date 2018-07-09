@@ -16,4 +16,26 @@ maternal-ipad 孕产妇-ipad端 目录结构
         /login.less
         *.png                   只与本页面相关的图片
         *.jpg                   只与本页面相关的图片
+    
+    /theDocumented              档案管理
+         /theDocumented.html    
+        /theDocumented.js
+        /theDocumented.less
+        *.png                   只与本页面相关的图片
+    
+    /center 个人中心
+        /center.heml
+        /center.less
+        /center.js
+        *.png 
+    
+    /particulars                            详情
+        /examineParticulars.html         复检详情页
+            examineParticulars.less
+            examineParticulars.js
+        /assessmentParticulars.html     高危评估详情页
+            assessmentParticulars.less
+            assessmentParticulars.js
+
+
 --------------------------------

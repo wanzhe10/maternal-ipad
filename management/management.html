@@ -57,58 +57,132 @@
 </head>
 
 <body>
-<span class="management">档案管理</span>
- <div class="box">
-    <header>
+    <span class="management">档案管理</span>
+    <div class="box">
+        <header>
             <div class="item-ifo">
-                    <input type="text" placeholder="请输入姓名" class="nameInput"> 
-            <i class="my"></i>
+                <input type="text" placeholder="请输入姓名" class="nameInput">
+                <i class="my"></i>
             </div>
             <div class="item-ifo">
                 <input type="text" placeholder="请输入孕妇档案号" class="numInput">
-            <i class="lookpng"></i>
+                <i class="lookpng"></i>
             </div>
 
-<a href="javascript:;"><img src="/maternal-ipad/management/ma.png" alt="扫码"></a>
-<input type="button" value="查询/刷新" class="inquire">
-    </header>
-    <main>
-<table class="layui-table " lay-even>
-    <colgroup>
+            <a href="javascript:;">
+                <img src="/maternal-ipad/management/ma.png" alt="扫码">
+            </a>
+            <input type="button" value="查询/刷新" class="inquire">
+        </header>
+        <main>
+            <div class="tableBox">
+                <table class="layui-table" lay-even id="yetTable">
+                    <!-- <colgroup>
         <col width="150">
         <col width="200">
         <col>
-    </colgroup>
-    <thead>
-        <tr>
-            <th>序号</th>
-            <th>姓名</th>
-            <th>身份证</th>
-            <th>年龄</th>
-            <th>孕周</th>
-            <th>孕产期</th>
-            <th>血型</th>
-            <th>评分等级</th>
-            <th>高危因素</th>
-            <th>操作</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>贤心</td>
-            <td>2016-11-29</td>
-            <td>人生就像是一场修行</td>
-        </tr>
-        <tr>
-            <td>许闲心</td>
-            <td>2016-11-28</td>
-            <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-        </tr>
-    </tbody>
-</table>
-    </main>
-    <footer></footer>
- </div>
+    </colgroup> -->
+                    <thead>
+                        <tr>
+                            <th class="w112">序号</th>
+                            <th class="w165">姓名</th>
+                            <th class="w470">身份证</th>
+                            <th class="w125">年龄</th>
+                            <th class="w130">孕周</th>
+                            <th class="w243">孕产期</th>
+                            <th class="w116">血型</th>
+                            <th class="w12">评分<br/>等级</th>
+                            <th class="w293">高危因素</th>
+                            <th class="w130">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td class="id">1
+                                <div class="rounded1"></div>
+                            </td>
+                            <td class="username">陈鑫磊</td>
+                            <td class="idCard">1302281988092741118</td>
+                            <td class="age">29</td>
+                            <td class="gestational">26+3</td>
+                            <td class="pregnant">2017-10-03</td>
+                            <td class="blood">B</td>
+                            <td class="grade">10</td>
+                            <td class="element">原发高血压asdfsadfasdf</td>
+                            <td class="operation">
+                                <a href="javascript:;">查看</a>
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td class="id">2
+                                <div class="rounded1"></div>
+                            </td>
+                            <td class="username">陈鑫磊</td>
+                            <td class="idCard">1302281988092741118</td>
+                            <td class="age">29</td>
+                            <td class="gestational">26+3</td>
+                            <td class="pregnant">2017-10-03</td>
+                            <td class="blood">B</td>
+                            <td class="grade">10</td>
+                            <td class="element">原发高血压.asdfsdf.....</td>
+                            <td class="operation">
+                                <a href="javascript:;">查看</a>
+                            </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="layui-table" lay-even id="stayTable">
+                    <thead>
+                        <tr>
+                            <th class="w112">序号</th>
+                            <th class="w165">姓名</th>
+                            <th class="w470">身份证</th>
+                            <th class="w125">年龄</th>
+                            <th class="w130">孕周</th>
+                            <th class="w243">孕产期</th>
+                            <th class="w116">血型</th>
+                            <th class="w293">高危因素</th>
+                            <th class="w184">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="id">1</td>
+                            <td class="username">陈鑫磊</td>
+                            <td class="idCard">1302281988092741118</td>
+                            <td class="age">29</td>
+                            <td class="gestational">26+3</td>
+                            <td class="pregnant">2017-10-03</td>
+                            <td class="blood">B</td>
+                            <td class="element"></td>
+                            <td class="operation">
+                                <a href="javascript:;">补充档案</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="pageBox clearfix">
+                <div id="test1"></div>
+                <b>操作人：
+                    <span>某某某</span>医生</b>
+            </div>
+            <input type="button" value="返回" class="backBtn">
+            <div class="likeBtnBox">
+                <input type="button" value="待见档列表" class="likeBtn" name='1'>
+                <div class="sup">4</div>
+            </div>
+            <input type="button" value="新建档案" class="newBtn">
+        </main>
+
+
+
+    </div>
 </body>
 
 </html>

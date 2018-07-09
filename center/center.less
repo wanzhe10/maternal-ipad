@@ -1,0 +1,351 @@
+@import "../css/reset.css";
+@import "../css/root.less";
+body{
+    background-color: #e8e8e8;
+}
+ .layui-tab-title .layui-this:after{
+                            border-bottom: 2px solid #68b7e7;
+                          .height(95);
+                            // .top(7);
+                }
+.layui-tab-brief>.layui-tab-more li.layui-this:after, .layui-tab-brief>.layui-tab-title .layui-this:after{
+        border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #68b7e7;
+}
+.layui-tab-brief>.layui-tab-title .layui-this{
+                                color: #68b7e7;
+}
+header{
+    .margin(0,40,40,40);
+     .box-shadow();
+    .height(470);
+    background-color: #fff;
+    .leftBox{
+        float: left;
+        .padding-top(40);
+        position: relative;
+        .width(460);
+        .height(470);
+        // background-color: red;
+          &:before {
+                    content: ' ';
+                    position: absolute;
+                    .top(84);
+                    .right(0);
+                    // transform: translate(-50%,0);
+                    .width(2);
+                    .height(323);
+                    background: #b3b3b3;;
+                 }
+        .headIcon{
+            .width(173);
+            .height(173);
+            .border-radius(100,100,100,100);
+            background-color: #ededed;
+            .border-width(1);
+            border-style: solid;
+            border-color: #7dc1ea;
+            .margin(0,0,20,152);
+        }
+        p{
+            .margin(0,0,20,130);
+        }
+       
+            .name{
+                .font-size(40);
+                color:#333333;
+                .margin-right(30);
+            }
+            .age{
+                .font-size(36);
+                color:#666666;
+            }
+        
+         p:nth-child(3){
+             color:#b3b3b3;
+              .font-size(28);
+            span{
+                .font-size(28);
+                .margin-right(20);
+                color:#333333;
+            }
+             span:nth-child(2){
+                .font-size(28);
+                .margin-left(20);
+                color:#333333;
+            }
+            
+        }
+        .preview{
+            .width(230);
+            .height(72);
+            background-color: #68b7e7;
+            color:#fff;
+            .margin-left(128);
+            .font-size(36);
+            font-weight: 100;
+        }
+    }
+    .rightBox{
+        .padding-top(50);
+        float: left;
+        .width(1500);
+        .height(470);
+        form{
+            .padding-left(107);
+            .row-left{
+                float: left;
+            .margin-bottom(20);
+            .margin-right(60);
+
+                label{
+                    .font-size(36);
+                    color:@333;
+                }
+              
+                input{
+                     .font-size(36);
+                    color:#666666;
+                    .padding-left(30);
+                    border-bottom:1px solid #ccc;
+                }
+                  .equally{
+                    .width(430);
+                }
+
+            }
+            .factor,.familyHistory{
+                input{
+                 .width(1090);
+                
+                }
+            }
+        }
+    }
+
+  
+}
+main{
+    position: relative;
+     .margin(40,40,0,40);
+     .padding-bottom(114);
+     .box-shadow();
+       background-color: #fff;
+     .tebBox{
+        
+         ul{
+            //   .height(102);
+                padding-bottom: 60px;
+             li{
+                .font-size(40);
+                // color: #68b7e7;
+                .margin(30,0,25,45);
+                .padding(0,0,0,0);
+             }
+         }
+     }
+     .layui-tab-content{
+        //  .max-height(420);
+         .recordBox{
+             .recordTable{
+                .border-width(2);
+                border-color: #999999;
+                border-style: solid;
+                width: 100%;
+                 border-color:#ccc;
+                 thead{
+                     tr{
+                         th{
+                             .height(90);
+                             background-color: #f6f6f6;
+                              width: 100%;
+                             color:#68b7e7;
+                             .font-size(36);
+                             span{
+                                 .padding(0,37,0,37);
+                                 position: relative;
+                                    &:before {
+                                    content: ' ';
+                                    position: absolute;
+                                    .top(0);
+                                    .right(0);
+                                    .width(2);
+                                    .height(50);
+                                    background: #68b7e7;
+                 }  
+                             }
+                             a{
+                                  color:#68b7e7;
+                             .font-size(36);
+                                float: right;
+                             }
+                         }
+                     }
+                 }
+                 tbody{
+                     tr{
+                         .font-size(36);
+                         
+                         td{
+                             .padding-left(30);
+                             .width(386);
+                             .height(88);
+                               .border-width(1);
+                            border-color: #999999;
+                            border-style: solid;
+                            span{
+                                color:#666666;
+                            }
+                            .unit{
+                                .font-size(32);
+                                color:#666666;
+                            }
+                           
+                            .resordTable_div{
+                                .resordTableInput{
+                                    .font-size(36);
+                                    color:#666666;
+                                    .padding-left(30);
+                                    border-bottom:1px solid #ccc;
+                                    .margin-bottom(70);
+                                }
+                                .resordTableInput1{
+                                      .width(1670);
+                                }
+                                 .resordTableInput2{
+                                     .width(1584);
+                                }
+                                 .resordTableInput3{
+                                     .width(400);
+                                }
+                                .operationDoctor{
+                                    float: right;
+                                    .margin-right(50);
+                                      span:nth-child(1){
+                                        .font-size(36);
+                                        color:#333333;
+                                    }
+                                }
+                            }
+                            .resordTable_div:nth-child(1){
+                                .margin-top(45);
+                            }
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     input[type="button"]{
+            .font-size(40);
+              position: absolute;
+             .bottom(-50);
+        } 
+          .backBtn{
+            .width(314);
+            .height(98);
+            border:.038rem /* 1/16 */ solid #999;
+             background-color: @ccc;  
+              color:@666;
+              .left(40);
+        }
+          .increased{
+            .width(316);
+            .height(100);
+            background-color: #68b7e7;
+            color:#fff; 
+             .right(40);
+            }
+    
+            .assessBox{
+                .assessTable{
+                     .border-width(2);
+                border-color: #999999;
+                border-style: solid;
+                width: 100%;
+                 border-color:#ccc;
+                 thead{
+                     tr{
+                         th{
+                             .height(90);
+                             background-color: #f6f6f6;
+                              width: 100%;
+                             color:#68b7e7;
+                             .font-size(36);
+                             span{
+                                 .padding(0,37,0,37);
+                                 position: relative;
+                                    &:before {
+                                    content: ' ';
+                                    position: absolute;
+                                    .top(0);
+                                    .right(0);
+                                    .width(2);
+                                    .height(50);
+                                    background: #68b7e7;
+                 }  
+                             }
+                             a{
+                                  color:#68b7e7;
+                             .font-size(36);
+                                float: right;
+                             }
+                         }
+                     }
+                 }
+                 tbody{
+                     tr{
+                         td{
+                              .padding-left(30);
+                             div{
+                                 p{
+                                     .font-size(36);
+                                     color:#333333;
+                                     .margin(30,0,44,0);
+                                 }
+                                 h3{
+                                     color: #666666;
+                                     span{
+                                         .margin-right(50);
+                                         b{
+                                             font-weight: 100;  
+                                         }
+                                     }
+                                 }
+                                .postscript{
+                                    .margin-top(50);
+                                    label{
+                                        .font-size(36);
+                                         color:#333333;
+                                          .margin(30,0,44,0);
+                                    }
+                                .postscriptInput{
+                                    .width(1705);
+                                    .font-size(36);
+                                    color:#666666;
+                                    .padding-left(30);
+                                    border-bottom:1px solid #ccc;
+                                    .margin-bottom(70);
+                                }
+                                }
+                                .operationDoctor{
+                                      float: right;
+                                    .margin-right(50);
+                                    span:nth-child(1){
+                                        .font-size(36);
+                                        color:#333333;
+                                    }
+                                    span:nth-child(2){
+                                        .font-size(36);
+                                        color:#666666;
+                                    }
+                                }
+                             }
+                         }
+                     }
+                 }
+                }
+                
+            }
+}

@@ -1,6 +1,39 @@
 @import "../css/reset.css";
 @import "../css/root.less";
 
+.w112{
+    .width(112);
+}
+.w165{
+    .width(165);
+}
+.w470{
+    .width(470);
+}
+.w125{
+    .width(125);
+}
+.w130{
+    .width(130);
+}
+.w243{
+    .width(243);
+}
+.w116{
+    .width(116);
+}
+.w128{
+    .width(128);
+}
+.w130{
+    .width(130);
+}
+.w293{
+    .width(293);
+}
+.w184{
+    .width(184);
+}
 body{
     background-color: #ededed;
     .management{
@@ -108,11 +141,169 @@ body{
             color:#fff;
             .font-size(32);
             .margin-left(98);
+            
         }
         
     }
     main{
-        .padding(0,20,0,20);
+        position: relative;
+        .padding(0,20,130,20);
+        .tableBox{
+            .min-height(810);
+              #yetTable,#stayTable{
+                   overflow: hidden;
+         
+            border-top: .0987rem solid #ccc;
+            .margin(0,0,0,0);
+            thead{
+                tr{
+                       background-color: #f6f6f6;
+                    th{
+                           .border-width(1);
+                        border-style: solid;
+                        border-color: #cccccc;
+                        .font-size(36);
+                        color:@333;
+                        .height(113);
+                        text-align: center;
+                        .padding(0,0,0,0);
+                    }
+                }
+            }
+            tbody{
+                tr{
+                     font-weight:100;
+                    td{
+                         .border-width(1);
+                        border-style: solid;
+                        border-color: #cccccc;
+                        .height(112);
+                        .font-size(36);
+                        text-align: center;
+                        .padding(0,0,0,0);
+                        color:@666;
+                        font-weight:100;
+                       
+                    }
+                    td:nth-child(1){
+                        color:#333333;
+                    }
+                }
+                tr:nth-child(even) {
+                  background-color: #f9f9f9;
+                    }
+            }
+                }
+                #stayTable{
+                    display: none;
+                }
+               
+        }
+      
+       
+        .pageBox{
+            text-align: center;
+            position: relative;
+             #test1{
+	          display: inline-block;
+            .layui-laypage a{
+                .margin(0,10,0,10);
+                .font-size(24);
+            }
+                text-align: center;
+                .margin-top(40);
+                .layui-laypage-prev{
+                    background-color: #e7e7e7;
+                     color:black;
+                    .margin(0,10,0,10);
+                    .height(55);
+                    .width(105);
+                     .padding(0,0,0,0);
+                     .line-height(55);
+                   
+                }
+                .layui-laypage-next{
+                       background-color: #e7e7e7;
+                     color:black;
+                    .margin(0,10,0,10);
+                    .height(55);
+                    .width(105);
+                    .padding(0,0,0,0);
+                    .line-height(55);
+                }
+             }
+             b{
+                 .font-size(36);
+                 font-weight: 100;
+                position: absolute;
+                right:0;
+                top:50%;
+             }
+
+        }
+        input{
+            .font-size(40);
+              position: absolute;
+              .bottom(0);
+        }
+        .backBtn{
+            .width(314);
+            .height(98);
+            border:.038rem /* 1/16 */ solid #999;
+             background-color: @ccc;  
+              color:@666;
+              .left(40);
+        }
+        
+        
+        .likeBtnBox{
+            .width(316);
+            .height(100);
+            position: absolute;
+            .right(380);
+            .bottom(0);
+        .likeBtn{
+            .width(316);
+            .height(100);
+            background-color: #68b7e7;
+            color:#fff; 
+            }
+        .sup{
+            .width(36);
+            .height(36);
+            .border-radius(100,100,100,100);
+            background-color: #fff;
+            text-align: center;
+            .line-height(36);
+            position: absolute;
+            .right(28);
+            .top(6);
+             }
+        }
+         .newBtn{
+            .width(316);
+            .height(100);
+            background-color: #68b7e7;
+             color:#fff;
+             .right(40);
+        }
+       
     }
+        .element{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
  
 }
+    // 评分的半圆柱
+            .rounded1{
+                display: inline;
+                .height(64);
+                .width(20);
+                .border-radius(10,10,10,10);
+                background-color: red;
+                position: absolute;
+                .top(24);
+                .left(-10);
+            }
